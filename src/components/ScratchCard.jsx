@@ -115,7 +115,7 @@ export default function ScratchCard({ onReveal }) {
       {/* Content under the scratch card */}
       <div 
         ref={containerRef}
-        className={`relative w-full aspect-[2/1] flex flex-col items-center justify-center p-5 sm:p-6 text-center overflow-hidden transition-opacity duration-300 ${isRevealed ? 'opacity-100' : 'opacity-0'}`}
+        className={`relative w-full aspect-[2/1] flex flex-col items-center justify-center rounded-[1.35rem] p-5 sm:p-6 text-center overflow-hidden transition-all duration-300 ${isRevealed ? 'opacity-100 bg-gradient-to-b from-[#fffefc] via-[#fff8e8] to-[#f7e4bc] border-[3px] border-[#b88a35] shadow-[0_12px_30px_rgba(78,42,12,0.24),inset_0_0_0_3px_rgba(255,255,255,0.55)]' : 'opacity-0 border-[3px] border-transparent'}`}
       >
         <span className="font-serif-royal text-xs sm:text-sm uppercase tracking-[0.22em] text-[#8c5a1e] font-bold block mb-1">
           MARK YOUR CALENDER

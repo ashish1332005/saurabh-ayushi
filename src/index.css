@@ -51,3 +51,7 @@
 .royal-gate-stage::before { background-image: url('/assets/saurabh-aayushi/landing-gate-bg.jpg'); }
 .gate-plaque-button { width: min(58vw, 250px); aspect-ratio: 2169 / 725; padding: 0; border: 0; background: url('/assets/saurabh-aayushi/gate-open-plaque.png') center / 100% 100% no-repeat; color: #6e1721; font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1rem, 4.8vw, 1.5rem); font-weight: 700; letter-spacing: .06em; text-shadow: 0 1px 0 rgba(255,255,255,.8); }
 .gate-plaque-button span { display: none; }
+/* New gate artwork already contains the complete painted door. Remove legacy sliced-door overlays, which caused mismatched colours and seams. */
+.royal-gate-stage .gate-door,
+.royal-gate-stage .gate-opening-reveal { display: none !important; }
+.royal-gate-stage::before { background-size: cover; background-position: center center; }

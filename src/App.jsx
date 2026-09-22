@@ -58,7 +58,7 @@ export default function App() {
               id="announcement-section" 
               className="relative w-full min-h-screen flex flex-col items-center justify-center py-10 px-4 border-b border-[#d4af37]/30 overflow-hidden bg-cover bg-center"
               style={{
-                backgroundImage: `url('/assets/saurabh-aayushi/footer-packing-bg.jpg')`
+                backgroundImage: `url('/assets/saurabh-aayushi/garden-clean-bg.jpg')`
               }}
             >
               <div className="announcement-sky-content relative z-10 w-full max-w-xl mx-auto flex flex-col items-center justify-start">
@@ -71,7 +71,7 @@ export default function App() {
               id="wardrobe-section" 
               className="relative w-full min-h-screen flex flex-col items-center justify-center py-12 px-3 sm:px-4 border-b border-[#d4af37]/30 overflow-hidden bg-cover bg-center"
               style={{
-                backgroundImage: `url('/assets/saurabh-aayushi/footer-packing-bg.jpg')`
+                backgroundImage: `url('/assets/saurabh-aayushi/wardrobe-planner-bg.png')`
               }}
             >
               <div className="relative z-10 w-full max-w-2xl mx-auto flex flex-col items-center justify-center">

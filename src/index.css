@@ -64,3 +64,8 @@
 .gate-plaque::before,
 .gate-plaque::after { background: transparent !important; border: 0 !important; box-shadow: none !important; }
 .gate-plaque-button { background-color: transparent !important; border: 0 !important; box-shadow: none !important; outline: 0 !important; }
+/* Final artwork is self-contained; no wash, vignette, or text layer over it. */
+#footer-section::before,
+#footer-section::after { display: none !important; content: none !important; }
+#footer-section { filter: none !important; opacity: 1 !important; background-color: transparent !important; }
+#footer-section > * { display: none !important; }

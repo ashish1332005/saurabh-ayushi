@@ -38,7 +38,7 @@ export default function ScratchCard({ onReveal }) {
       }
       ctx.putImageData(pixels, 0, 0);
     };
-    cover.src = '/assets/saurabh-aayushi/scratch-card-cover.png';
+    cover.src = '/assets/saurabh-aayushi/scratch-card-cover-transparent.png';
   }, []);
 
   const getPosition = (e) => {

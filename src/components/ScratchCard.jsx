@@ -115,7 +115,7 @@ export default function ScratchCard({ onReveal }) {
       {/* Content under the scratch card */}
       <div 
         ref={containerRef}
-        className="relative w-full aspect-[2/1] flex flex-col items-center justify-center rounded-[1.35rem] p-5 sm:p-6 text-center bg-gradient-to-b from-[#fffefc] via-[#fff8e8] to-[#f7e4bc] border-[3px] border-[#b88a35] shadow-[0_12px_30px_rgba(78,42,12,0.24),inset_0_0_0_3px_rgba(255,255,255,0.55)] overflow-hidden"
+        className={`relative w-full aspect-[2/1] flex flex-col items-center justify-center p-5 sm:p-6 text-center overflow-hidden transition-opacity duration-300 ${isRevealed ? 'opacity-100' : 'opacity-0'}`}
       >
         <span className="font-serif-royal text-xs sm:text-sm uppercase tracking-[0.22em] text-[#8c5a1e] font-bold block mb-1">
           MARK YOUR CALENDER
@@ -153,19 +153,6 @@ export default function ScratchCard({ onReveal }) {
           onTouchEnd={() => setIsDrawing(false)}
           className="absolute inset-0 w-full h-full rounded-2xl cursor-pointer touch-none z-20 shadow-md"
         />
-      )}
-
-      {/* Helper Scratch button */}
-      {!isRevealed && (
-        <div className="mt-1.5 flex justify-center">
-          <button
-            onClick={handleCompleteReveal}
-            className="flex items-center gap-1.5 text-[11px] font-serif-royal text-[#8c5a1e] hover:text-[#5c131a] bg-[#fffdfa]/80 px-3 py-1 rounded-full border border-[#d4af37]/50 shadow-xs cursor-pointer transition-transform hover:scale-105"
-          >
-            <Sparkles className="w-3 h-3 text-[#d4af37]" />
-            <span>Tap to reveal instantly</span>
-          </button>
-        </div>
       )}
     </div>
   );

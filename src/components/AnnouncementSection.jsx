@@ -41,7 +41,7 @@ export default function AnnouncementSection() {
   return (
     <div className="w-full flex flex-col items-center justify-center py-6 sm:py-10 px-3 max-w-lg mx-auto text-center">
       
-      {/* Saurabh & Aayushi "अ & S" Ornate Monogram */}
+      {/* Saurabh & Aayushi "à¤… & S" Ornate Monogram */}
       <motion.div 
         initial={{ opacity: 0, y: -20, scale: 0.9 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -55,28 +55,20 @@ export default function AnnouncementSection() {
           className="w-full h-full object-contain filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)]"
         />
       </motion.div>
-
-      {/* Intro text */}
-      <motion.p 
-        initial={{ opacity: 0, y: -10 }}
-        whileInView={{ opacity: 1, y: 0 }}
+      {/* Supplied invitation typography graphic replaces the plain intro and names text. */}
+      <motion.div
+        initial={{ opacity: 0, y: -10, scale: 0.96 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-        className="font-serif-royal text-sm sm:text-base text-[#5c131a] italic tracking-wide max-w-xs sm:max-w-md mx-auto mb-2 filter drop-shadow-xs"
+        className="w-full max-w-[340px] sm:max-w-[470px] my-1"
       >
-        We hope this guide helps you select the perfect attire for our big day.
-      </motion.p>
-
-      {/* Couple Names */}
-      <motion.h1 
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: false, amount: 0.3 }}
-        transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
-        className="font-serif-royal text-3xl sm:text-4xl md:text-5xl font-normal text-[#5c131a] tracking-wide my-1 filter drop-shadow-xs"
-      >
-        Saurabh <span className="italic font-normal text-[#8c5a1e]">&amp;</span> Aayushi
-      </motion.h1>
+        <img
+          src="/assets/saurabh-aayushi/media_1790058783764.png"
+          alt="We hope this guide helps you select the perfect attire for our big day. Saurabh and Aayushi"
+          className="w-full h-auto object-contain"
+        />
+      </motion.div>
 
       {/* Interactive Scratch Card: Mark Your Calender */}
       <motion.div
@@ -99,11 +91,11 @@ export default function AnnouncementSection() {
       >
         {/* Compact Ribbon Badge for Title */}
         <div className="inline-flex items-center justify-center gap-1.5 mb-2 bg-[#fffdfa]/95 border border-[#d4af37]/70 rounded-full px-3.5 py-1 shadow-xs">
-          <span className="text-[10px] text-[#b8860b]">★</span>
+          <span className="text-[10px] text-[#b8860b]">â˜…</span>
           <span className="font-serif-royal text-[10px] sm:text-xs uppercase tracking-[0.15em] text-[#4a0d13] font-bold">
             Counting Down To The Celebration
           </span>
-          <span className="text-[10px] text-[#b8860b]">★</span>
+          <span className="text-[10px] text-[#b8860b]">â˜…</span>
         </div>
 
         {/* 4 Compact Countdown Unit Boxes */}

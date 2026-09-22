@@ -59,3 +59,8 @@
 .gate-plaque-button span { display: inline !important; }
 .gate-plaque-button span:first-child,
 .gate-plaque-button span:last-child { display: none !important; }
+/* Supplied plaque is the only button surface—remove every legacy brown button layer. */
+.gate-plaque,
+.gate-plaque::before,
+.gate-plaque::after { background: transparent !important; border: 0 !important; box-shadow: none !important; }
+.gate-plaque-button { background-color: transparent !important; border: 0 !important; box-shadow: none !important; outline: 0 !important; }

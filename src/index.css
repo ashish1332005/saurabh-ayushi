@@ -37,3 +37,12 @@
 .planner-title { top: 41%; }
 @media (min-width: 640px) { .planner-title { top: 40%; } }
 @media (max-width: 639px) { .planner-title { top: 41%; } }
+/* Rebalance the landing artwork: logo now sits within the open-sky composition. */
+.gate-logo { position: absolute; top: 11%; left: 0; right: 0; }
+.planner-title { top: 35%; }
+@media (max-width: 639px) { .gate-logo { top: 12%; } .planner-title { top: 35%; } }
+
+/* Footer stays card-free; a soft vignette makes text readable over the garden. */
+#footer-section::before { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at center, rgba(255,250,241,.52) 0%, rgba(255,250,241,.26) 46%, rgba(255,250,241,0) 78%); }
+#footer-section .footer-readable-panel { z-index: 1; }
+#footer-section .font-script-royal, #footer-section .font-serif-royal { color: #57131b !important; text-shadow: 0 1px 1px rgba(255,255,255,.96), 0 0 12px rgba(255,253,244,.95), 0 0 22px rgba(255,248,235,.8) !important; }

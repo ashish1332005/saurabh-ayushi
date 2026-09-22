@@ -52,7 +52,7 @@ export default function RoyalGate({ onGateOpened }) {
       
       {/* 1. TOP LOGO SECTION: Transparent Monogram */}
       <div 
-        className={`flex flex-col items-center text-center z-20 w-full pt-1 transition-all duration-700 ease-out ${
+        className={`gate-logo flex flex-col items-center text-center z-20 w-full pt-1 transition-all duration-700 ease-out ${
           isOpening ? 'opacity-0 -translate-y-8 pointer-events-none' : 'opacity-100 translate-y-0'
         }`}
       >        {/* Static transparent monogram: no hanging vine or sway animation. */}

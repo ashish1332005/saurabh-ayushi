@@ -55,3 +55,7 @@
 .royal-gate-stage .gate-door,
 .royal-gate-stage .gate-opening-reveal { display: none !important; }
 .royal-gate-stage::before { background-size: cover; background-position: center center; }
+/* Keep the label visible inside the supplied floral plaque. */
+.gate-plaque-button span { display: inline !important; }
+.gate-plaque-button span:first-child,
+.gate-plaque-button span:last-child { display: none !important; }

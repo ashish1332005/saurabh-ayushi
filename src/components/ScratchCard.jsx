@@ -21,32 +21,13 @@ export default function ScratchCard({ onReveal }) {
     canvas.width = width;
     canvas.height = height;
 
-    // Create a rich shimmering gold scratch layer
-    const gradient = ctx.createLinearGradient(0, 0, width, height);
-    gradient.addColorStop(0, '#e5c07b');
-    gradient.addColorStop(0.3, '#d4af37');
-    gradient.addColorStop(0.5, '#fff2b2');
-    gradient.addColorStop(0.7, '#c99a2c');
-    gradient.addColorStop(1, '#aa7c11');
-
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, width, height);
-
-    // Add subtle decorative border on canvas
-    ctx.strokeStyle = '#8c6227';
-    ctx.lineWidth = 4;
-    ctx.strokeRect(4, 4, width - 8, height - 8);
-
-    // Add scratch instruction text on top of the foil
-    ctx.fillStyle = '#4a121a';
-    ctx.font = 'bold 13px "Cormorant Garamond", serif';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.fillText('SCRATCH HERE TO REVEAL', width / 2, height / 2 - 8);
-    
-    ctx.font = 'italic 11px "Cormorant Garamond", serif';
-    ctx.fillStyle = '#5c1e28';
-    ctx.fillText('Swipe or drag to reveal wedding dates', width / 2, height / 2 + 12);
+    // Use the supplied floral royal artwork as the scratch-off cover.
+    const cover = new Image();
+    cover.onload = () => {
+      ctx.clearRect(0, 0, width, height);
+      ctx.drawImage(cover, 0, 0, width, height);
+    };
+    cover.src = '/assets/saurabh-aayushi/scratch-card-cover.png';
   }, []);
 
   const getPosition = (e) => {
@@ -123,7 +104,7 @@ export default function ScratchCard({ onReveal }) {
       {/* Content under the scratch card */}
       <div 
         ref={containerRef}
-        className="relative w-full rounded-[1.35rem] p-5 sm:p-6 text-center bg-gradient-to-b from-[#fffefc] via-[#fff8e8] to-[#f7e4bc] border-[3px] border-[#b88a35] shadow-[0_12px_30px_rgba(78,42,12,0.24),inset_0_0_0_3px_rgba(255,255,255,0.55)] overflow-hidden"
+        className="relative w-full aspect-[2/1] flex flex-col items-center justify-center rounded-[1.35rem] p-5 sm:p-6 text-center bg-gradient-to-b from-[#fffefc] via-[#fff8e8] to-[#f7e4bc] border-[3px] border-[#b88a35] shadow-[0_12px_30px_rgba(78,42,12,0.24),inset_0_0_0_3px_rgba(255,255,255,0.55)] overflow-hidden"
       >
         <span className="font-serif-royal text-xs sm:text-sm uppercase tracking-[0.22em] text-[#8c5a1e] font-bold block mb-1">
           MARK YOUR CALENDER

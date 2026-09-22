@@ -83,7 +83,7 @@ export default function App() {
               id="footer-section" 
               className="relative w-full min-h-screen flex flex-col items-center justify-center text-center overflow-hidden bg-cover bg-center"
               style={{
-                backgroundImage: `url('/assets/saurabh-aayushi/footer-packing-bg.jpg')`
+                backgroundImage: `url('/assets/saurabh-aayushi/final-page.png')`
               }}
             >
             </footer>

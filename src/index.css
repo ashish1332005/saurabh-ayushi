@@ -333,3 +333,8 @@ body {
   #wardrobe-section .wardrobe-sky-layout > .relative + .flex { margin-top: .65rem; }
   #wardrobe-section .wardrobe-sky-layout > .mt-3 { margin-top: .75rem; transform: none; }
 }
+/* A soft open-sky area behind the Wardrobe Planner lettering—no hard white card. */
+.wardrobe-sky-title { position: relative; isolation: isolate; padding: .75rem 1rem; }
+.wardrobe-sky-title::before { content: ''; position: absolute; z-index: -1; inset: -.8rem -1.6rem; background: radial-gradient(ellipse at center, rgba(255,253,246,.94) 0%, rgba(255,250,239,.74) 45%, rgba(255,250,239,0) 78%); filter: blur(3px); }
+.wardrobe-sky-title img { filter: drop-shadow(0 2px 1px rgba(255,255,255,.9)) !important; }
+@media (max-width: 639px) { .wardrobe-sky-title { padding: .8rem .6rem; } .wardrobe-sky-title::before { inset: -.75rem -1.1rem; } }

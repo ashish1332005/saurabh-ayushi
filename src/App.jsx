@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import RoyalGate from './components/RoyalGate';
 import AnnouncementSection from './components/AnnouncementSection';
 import WardrobeGuide from './components/WardrobeGuide';
-import VenueSection from './components/VenueSection';
 import PackingWeatherFooter from './components/PackingWeatherFooter';
 import AudioPlayer from './components/AudioPlayer';
 import FlyingGuideBird from './components/FlyingGuideBird';
@@ -80,21 +79,7 @@ export default function App() {
                 <WardrobeGuide />
               </div>
             </section>
-
-            {/* SECTION 3: THE VENUE (Dedicated Venue Reception Background) */}
-            <section 
-              id="venue-section" 
-              className="relative w-full min-h-screen min-h-[100dvh] flex flex-col items-center justify-center pt-8 pb-10 px-4 border-b border-[#d4af37]/30 overflow-hidden bg-cover bg-center"
-              style={{
-                backgroundImage: `url('/assets/padam/reception-bg-Bhu2sMue.webp')`
-              }}
-            >
-              <div className="relative z-10 w-full max-w-xl mx-auto flex flex-col items-center justify-center">
-                <VenueSection />
-              </div>
-            </section>
-
-            {/* SECTION 4: PACKING CHECKLIST, WEATHER & SONI & BOOLCHANDANI FAMILY (Lakeside Terrace Diwan Background) */}
+{/* SECTION 3: PACKING CHECKLIST, WEATHER & SONI & BOOLCHANDANI FAMILY (Lakeside Terrace Diwan Background) */}
             <footer 
               id="footer-section" 
               className="relative w-full min-h-screen flex flex-col items-center justify-center text-center overflow-hidden bg-cover bg-center"

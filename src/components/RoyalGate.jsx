@@ -55,44 +55,9 @@ export default function RoyalGate({ onGateOpened }) {
         className={`flex flex-col items-center text-center z-20 w-full pt-1 transition-all duration-700 ease-out ${
           isOpening ? 'opacity-0 -translate-y-8 pointer-events-none' : 'opacity-100 translate-y-0'
         }`}
-      >
-        {/* Hanging Chain & Monogram */}
-        <div className="flex flex-col items-center animate-hanging-chain">
-          {/* Delicate Antique Gold Vine Stem */}
-          <div className="w-5 sm:w-6 h-9 sm:h-12 flex items-center justify-center pointer-events-none">
-            <svg viewBox="0 0 24 120" fill="none" className="w-full h-full filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.25)]" preserveAspectRatio="none">
-              <defs>
-                <linearGradient id="vineGoldStem" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#FFF0B3" />
-                  <stop offset="45%" stopColor="#D4AF37" />
-                  <stop offset="100%" stopColor="#997312" />
-                </linearGradient>
-                <linearGradient id="leafGoldFill" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#bfa15f" stopOpacity="0.9" />
-                  <stop offset="100%" stopColor="#785e25" stopOpacity="0.85" />
-                </linearGradient>
-              </defs>
-              <path d="M12,0 Q9,30 12,60 Q15,90 12,120" stroke="url(#vineGoldStem)" strokeWidth="1.4" fill="none" strokeLinecap="round" />
-              <path d="M12,8 Q4,4 6,12 Q10,11 12,8" fill="url(#leafGoldFill)" stroke="#544116" strokeWidth="0.5" />
-              <path d="M12,16 Q20,12 18,20 Q14,19 12,16" fill="url(#leafGoldFill)" stroke="#544116" strokeWidth="0.5" />
-              <path d="M12,34 Q4,30 5,38 Q10,37 12,34" fill="url(#leafGoldFill)" stroke="#544116" strokeWidth="0.5" />
-              <path d="M12,42 Q20,38 19,46 Q14,45 12,42" fill="url(#leafGoldFill)" stroke="#544116" strokeWidth="0.5" />
-              <path d="M12,62 Q4,58 6,66 Q10,65 12,62" fill="url(#leafGoldFill)" stroke="#544116" strokeWidth="0.5" />
-              <path d="M12,70 Q20,66 18,74 Q14,73 12,70" fill="url(#leafGoldFill)" stroke="#544116" strokeWidth="0.5" />
-              <circle cx="12" cy="24" r="1.4" fill="#FFF0B3" stroke="#D4AF37" strokeWidth="0.4" />
-              <circle cx="12" cy="52" r="1.4" fill="#FFF0B3" stroke="#D4AF37" strokeWidth="0.4" />
-              <circle cx="12" cy="80" r="1.4" fill="#FFF0B3" stroke="#D4AF37" strokeWidth="0.4" />
-            </svg>
-          </div>
-
-          {/* Clean Transparent "अ & S" Monogram */}
-          <div className="w-28 h-28 sm:w-36 sm:h-36 -mt-2 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
-            <img 
-              src="/assets/saurabh-aayushi/as-monogram-clean.png" 
-              alt="Saurabh & Aayushi Monogram" 
-              className="w-full h-full object-contain filter drop-shadow-[0_8px_20px_rgba(0,0,0,0.28)]"
-            />
-          </div>
+      >        {/* Static transparent monogram: no hanging vine or sway animation. */}
+        <div className="w-28 h-28 sm:w-36 sm:h-36 flex items-center justify-center">
+          <img src="/assets/saurabh-aayushi/as-monogram-clean.png" alt="Saurabh & Aayushi Monogram" className="w-full h-full object-contain filter drop-shadow-[0_8px_20px_rgba(0,0,0,0.28)]" />
         </div>
       </div>
 

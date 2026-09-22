@@ -30,3 +30,6 @@
 .announcement-sky-content::before { display: none !important; }
 #announcement-section .font-serif-royal { text-shadow: 0 1px 1px rgba(255,255,255,.55), 0 1px 5px rgba(73,27,16,.16); }
 #announcement-section h1 { text-shadow: 0 1px 1px rgba(255,255,255,.62), 0 2px 5px rgba(73,27,16,.18); }
+/* Fill the complete Wardrobe section with the supplied portrait background—no yellow fallback below it. */
+#wardrobe-section { background-size: cover; background-position: center center; background-color: #eaf2f4; }
+@media (max-width: 639px) { #wardrobe-section { background-size: cover !important; background-position: center center; background-color: #eaf2f4; } }

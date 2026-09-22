@@ -304,3 +304,22 @@ body {
 .footer-readable-panel { background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; backdrop-filter: none !important; }
 #footer-section { background-position: center center; }
 #footer-section .font-script-royal, #footer-section .font-serif-royal { text-shadow: 0 2px 5px rgba(255,255,255,.94), 0 0 13px rgba(255,255,255,.86); }
+/* Phone-first layout: portrait artwork needs deliberate use of its open sky. */
+@media (max-width: 639px) {
+  .gate-plaque { top: 75.5% !important; }
+  .gate-plaque button { padding: .45rem 1rem !important; font-size: .95rem !important; min-height: 0; }
+
+  #announcement-section { padding-top: 5.5vh; }
+  #announcement-section .w-full.flex.flex-col.items-center.justify-center.py-6 { padding-top: 0; transform: scale(.9); transform-origin: top center; }
+
+  #wardrobe-section { padding-top: 4vh; min-height: 100svh; }
+  .wardrobe-sky-layout { padding-top: 0 !important; }
+  .wardrobe-sky-title { width: 62%; max-width: 235px !important; margin-bottom: .35rem !important; }
+  #wardrobe-section .wardrobe-sky-layout > .relative { width: 190px; max-width: 190px !important; margin-top: 0 !important; }
+  #wardrobe-section .wardrobe-sky-layout > .relative > button { transform: scale(.78); }
+  #wardrobe-section .wardrobe-sky-layout > .relative + .flex { margin-top: .2rem; }
+  #wardrobe-section .wardrobe-sky-layout > .mt-3 { margin-top: .35rem; transform: scale(.82); transform-origin: top center; }
+
+  .footer-readable-panel { padding: .25rem 1rem !important; }
+  #footer-section .w-full.flex.flex-col.items-center.justify-center { transform: scale(.9); transform-origin: center; }
+}

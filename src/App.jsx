@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import RoyalGate from './components/RoyalGate';
 import AnnouncementSection from './components/AnnouncementSection';
 import WardrobeGuide from './components/WardrobeGuide';
-import PackingWeatherFooter from './components/PackingWeatherFooter';
 import AudioPlayer from './components/AudioPlayer';
 import FlyingGuideBird from './components/FlyingGuideBird';
 
@@ -59,7 +58,7 @@ export default function App() {
               id="announcement-section" 
               className="relative w-full min-h-screen flex flex-col items-center justify-center py-10 px-4 border-b border-[#d4af37]/30 overflow-hidden bg-cover bg-center"
               style={{
-                backgroundImage: `url('/assets/saurabh-aayushi/wardrobe-planner-bg.png')`
+                backgroundImage: `url('/assets/saurabh-aayushi/footer-packing-bg.jpg')`
               }}
             >
               <div className="announcement-sky-content relative z-10 w-full max-w-xl mx-auto flex flex-col items-center justify-start">
@@ -72,7 +71,7 @@ export default function App() {
               id="wardrobe-section" 
               className="relative w-full min-h-screen flex flex-col items-center justify-center py-12 px-3 sm:px-4 border-b border-[#d4af37]/30 overflow-hidden bg-cover bg-center"
               style={{
-                backgroundImage: `url('/assets/saurabh-aayushi/wardrobe-planner-bg.png')`
+                backgroundImage: `url('/assets/saurabh-aayushi/footer-packing-bg.jpg')`
               }}
             >
               <div className="relative z-10 w-full max-w-2xl mx-auto flex flex-col items-center justify-center">
@@ -84,12 +83,9 @@ export default function App() {
               id="footer-section" 
               className="relative w-full min-h-screen flex flex-col items-center justify-center text-center overflow-hidden bg-cover bg-center"
               style={{
-                backgroundImage: `url('/assets/saurabh-aayushi/wardrobe-planner-bg.png')`
+                backgroundImage: `url('/assets/saurabh-aayushi/footer-packing-bg.jpg')`
               }}
             >
-              <div className="footer-readable-panel relative z-10 w-full max-w-lg mx-auto my-auto p-4">
-                <PackingWeatherFooter />
-              </div>
             </footer>
 
           </motion.div>

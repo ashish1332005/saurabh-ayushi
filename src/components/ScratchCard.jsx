@@ -42,7 +42,7 @@ export default function ScratchCard({ onReveal }) {
     ctx.font = 'bold 13px "Cormorant Garamond", serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText('✨ SCRATCH HERE TO REVEAL ✨', width / 2, height / 2 - 8);
+    ctx.fillText('SCRATCH HERE TO REVEAL', width / 2, height / 2 - 8);
     
     ctx.font = 'italic 11px "Cormorant Garamond", serif';
     ctx.fillStyle = '#5c1e28';
@@ -123,7 +123,7 @@ export default function ScratchCard({ onReveal }) {
       {/* Content under the scratch card */}
       <div 
         ref={containerRef}
-        className="relative w-full rounded-2xl p-4 sm:p-5 text-center bg-gradient-to-b from-[#fffefc] via-[#fff9ef] to-[#fbf2de] border-2 border-[#b58b4c] shadow-[0_8px_25px_rgba(0,0,0,0.12)] overflow-hidden"
+        className="relative w-full rounded-[1.35rem] p-5 sm:p-6 text-center bg-gradient-to-b from-[#fffefc] via-[#fff8e8] to-[#f7e4bc] border-[3px] border-[#b88a35] shadow-[0_12px_30px_rgba(78,42,12,0.24),inset_0_0_0_3px_rgba(255,255,255,0.55)] overflow-hidden"
       >
         <span className="font-serif-royal text-xs sm:text-sm uppercase tracking-[0.22em] text-[#8c5a1e] font-bold block mb-1">
           MARK YOUR CALENDER

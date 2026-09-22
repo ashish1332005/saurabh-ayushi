@@ -23,3 +23,6 @@
 .planner-title { top: 33%; }
 @media (min-width: 640px) { .planner-title { top: 34%; } }
 @media (max-width: 639px) { .planner-title { top: 34%; } }
+/* Supplied Wardrobe Planner artwork is a portrait composition—show it fully on phones. */
+#wardrobe-section { background-position: center top; }
+@media (max-width: 639px) { #wardrobe-section { background-size: 100% auto; background-repeat: no-repeat; background-color: #f4e5ce; } }

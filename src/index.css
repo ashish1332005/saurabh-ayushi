@@ -19,3 +19,7 @@
 #announcement-section .w-full.flex.flex-col.items-center.justify-center.py-6 > .w-full.my-3 { margin-top: .65rem; margin-bottom: .55rem; }
 #announcement-section .w-full.flex.flex-col.items-center.justify-center.py-6 > .w-full.max-w-\[320px\] { margin-top: .25rem; }
 @media (max-width: 639px) { #announcement-section { padding-top: 4vh; } #announcement-section .w-full.flex.flex-col.items-center.justify-center.py-6 { transform: scale(.86); transform-origin: top center; } }
+/* Bring the landing Wardrobe Planner title closer to the static logo. */
+.planner-title { top: 33%; }
+@media (min-width: 640px) { .planner-title { top: 34%; } }
+@media (max-width: 639px) { .planner-title { top: 34%; } }

@@ -323,3 +323,13 @@ body {
   .footer-readable-panel { padding: .25rem 1rem !important; }
   #footer-section .w-full.flex.flex-col.items-center.justify-center { transform: scale(.9); transform-origin: center; }
 }
+/* Wardrobe Planner: centered portrait composition matching the supplied reference. */
+@media (max-width: 639px) {
+  #wardrobe-section { justify-content: center; padding: 2.5rem .75rem 2rem; }
+  .wardrobe-sky-layout { justify-content: center; padding-top: 0 !important; padding-bottom: 0 !important; }
+  .wardrobe-sky-title { width: 76%; max-width: 290px !important; margin: 0 0 .75rem !important; }
+  #wardrobe-section .wardrobe-sky-layout > .relative { width: 230px; max-width: 230px !important; margin: 0 !important; }
+  #wardrobe-section .wardrobe-sky-layout > .relative > button { transform: scale(.9); }
+  #wardrobe-section .wardrobe-sky-layout > .relative + .flex { margin-top: .65rem; }
+  #wardrobe-section .wardrobe-sky-layout > .mt-3 { margin-top: .75rem; transform: none; }
+}

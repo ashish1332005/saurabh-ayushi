@@ -26,6 +26,17 @@ export default function ScratchCard({ onReveal }) {
     cover.onload = () => {
       ctx.clearRect(0, 0, width, height);
       ctx.drawImage(cover, 0, 0, width, height);
+
+      // The supplied artwork has a black preview backdrop. Make that backdrop transparent
+      // while preserving the gold frame, flowers, and scratch instructions.
+      const pixels = ctx.getImageData(0, 0, width, height);
+      for (let i = 0; i < pixels.data.length; i += 4) {
+        const red = pixels.data[i];
+        const green = pixels.data[i + 1];
+        const blue = pixels.data[i + 2];
+        if (red < 24 && green < 24 && blue < 24) pixels.data[i + 3] = 0;
+      }
+      ctx.putImageData(pixels, 0, 0);
     };
     cover.src = '/assets/saurabh-aayushi/scratch-card-cover.png';
   }, []);

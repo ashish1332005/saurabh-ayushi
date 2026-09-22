@@ -26,3 +26,7 @@
 /* Supplied Wardrobe Planner artwork is a portrait composition—show it fully on phones. */
 #wardrobe-section { background-position: center top; }
 @media (max-width: 639px) { #wardrobe-section { background-size: 100% auto; background-repeat: no-repeat; background-color: #f4e5ce; } }
+/* Restore the first-section artwork: readable copy without a bright background wash. */
+.announcement-sky-content::before { display: none !important; }
+#announcement-section .font-serif-royal { text-shadow: 0 1px 1px rgba(255,255,255,.55), 0 1px 5px rgba(73,27,16,.16); }
+#announcement-section h1 { text-shadow: 0 1px 1px rgba(255,255,255,.62), 0 2px 5px rgba(73,27,16,.18); }

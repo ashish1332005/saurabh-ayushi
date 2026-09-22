@@ -86,7 +86,7 @@ export default function App() {
               id="venue-section" 
               className="relative w-full min-h-screen min-h-[100dvh] flex flex-col items-center justify-center pt-8 pb-10 px-4 border-b border-[#d4af37]/30 overflow-hidden bg-cover bg-center"
               style={{
-                backgroundImage: `url('/assets/saurabh-aayushi/garden-clean-bg.jpg')`
+                backgroundImage: `url('/assets/padam/reception-bg-Bhu2sMue.webp')`
               }}
             >
               <div className="relative z-10 w-full max-w-xl mx-auto flex flex-col items-center justify-center">

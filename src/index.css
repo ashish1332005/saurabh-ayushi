@@ -33,3 +33,7 @@
 /* Fill the complete Wardrobe section with the supplied portrait background—no yellow fallback below it. */
 #wardrobe-section { background-size: cover; background-position: center center; background-color: #eaf2f4; }
 @media (max-width: 639px) { #wardrobe-section { background-size: cover !important; background-position: center center; background-color: #eaf2f4; } }
+/* Balance the landing sequence: logo → Wardrobe Planner → gate. */
+.planner-title { top: 41%; }
+@media (min-width: 640px) { .planner-title { top: 40%; } }
+@media (max-width: 639px) { .planner-title { top: 41%; } }

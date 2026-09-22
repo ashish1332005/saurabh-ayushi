@@ -38,7 +38,7 @@ export default function App() {
             id="hero-section" 
             className="fixed inset-0 z-50 w-full h-screen flex flex-col items-center justify-between overflow-hidden bg-cover bg-center"
             style={{
-              backgroundImage: `url('/assets/saurabh-aayushi/gate-closed.jpg')`
+              backgroundImage: `url('/assets/saurabh-aayushi/landing-gate-bg.jpg')`
             }}
           >
             <div className="relative z-10 w-full h-full flex flex-col items-center justify-between pt-0 pb-1 sm:pb-3">

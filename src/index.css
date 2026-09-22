@@ -1,0 +1,296 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-script: 'Pinyon Script', cursive;
+    --font-display: 'Great Vibes', cursive;
+    --font-body: 'Karla', sans-serif;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #180407;
+  color: #fff9ee;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.font-serif-royal {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-script-royal {
+  font-family: 'Pinyon Script', cursive;
+}
+
+.font-display-royal {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-body-royal {
+  font-family: 'Karla', sans-serif;
+}
+
+/* Gold text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF0B3 0%, #D4AF37 50%, #AA7C11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gold border gradient */
+.border-gold-gradient {
+  border-image: linear-gradient(135deg, #FFF0B3, #D4AF37, #8B6508) 1;
+}
+
+/* Glass royal card */
+.glass-royal {
+  background: rgba(45, 10, 16, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(212, 175, 55, 0.1);
+}
+
+.glass-royal-light {
+  background: rgba(255, 248, 235, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* 3D Gate Animation Classes */
+.gate-container {
+  perspective: 1200px;
+  perspective-origin: center center;
+}
+
+.gate-door {
+  transform-style: preserve-3d;
+  transition: transform 1.8s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.gate-door-left {
+  transform-origin: left center;
+}
+
+.gate-door-right {
+  transform-origin: right center;
+}
+
+.gate-open-left {
+  transform: rotateY(-115deg);
+}
+
+.gate-open-right {
+  transform: rotateY(115deg);
+}
+
+/* Book 3D Container & Flip */
+.book-perspective {
+  perspective: 1600px;
+  perspective-origin: center center;
+}
+
+.book-card {
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-flip-left {
+  transform-origin: left center;
+  transition: transform 0.9s ease-in-out;
+}
+
+.page-flip-right {
+  transform-origin: right center;
+  transition: transform 0.9s ease-in-out;
+}
+
+/* Royal Pattern Background */
+.bg-royal-pattern {
+  background-color: #27060b;
+  background-image: radial-gradient(rgba(212, 175, 55, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-velvet {
+  background: radial-gradient(circle at center, #5c0f1b 0%, #30060c 60%, #150205 100%);
+}
+
+/* Gold Shimmer effect */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer-gold {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0) 0%, rgba(255, 240, 180, 0.8) 50%, rgba(212, 175, 55, 0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #180407;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 3px;
+}
+
+/* Falling Petals Animation */
+@keyframes fallingPetal {
+  0% {
+    transform: translateY(-20px) rotate(0deg) scale(0.8);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(380px) rotate(420deg) scale(1.1);
+    opacity: 0;
+  }
+}
+
+.animate-petal {
+  animation: fallingPetal 4.5s linear infinite;
+}
+
+/* Hanging Chain Sway Animation for Logo Medallion */
+@keyframes hangingSway {
+  0% {
+    transform: rotate(-3.5deg);
+  }
+  50% {
+    transform: rotate(3.5deg);
+  }
+  100% {
+    transform: rotate(-3.5deg);
+  }
+}
+
+.animate-hanging-chain {
+  transform-origin: top center;
+  animation: hangingSway 5s ease-in-out infinite;
+}
+
+/* Wing Flapping Animation for Flying Guide Bird */
+@keyframes flapWingLeft {
+  0%, 100% {
+    transform: rotate(0deg) scaleY(1);
+  }
+  50% {
+    transform: rotate(-30deg) scaleY(0.6);
+  }
+}
+
+@keyframes flapWingRight {
+  0%, 100% {
+    transform: rotate(0deg) scaleY(1);
+  }
+  50% {
+    transform: rotate(30deg) scaleY(0.6);
+  }
+}
+
+.animate-wing-left {
+  transform-origin: right bottom;
+  animation: flapWingLeft 0.35s ease-in-out infinite;
+}
+
+.animate-wing-right {
+  transform-origin: left bottom;
+  animation: flapWingRight 0.35s ease-in-out infinite;
+}
+
+/* Flower Surprise Burst Animation */
+@keyframes flowerSurpriseBurst {
+  0% {
+    transform: translate(0, 0) scale(0.2) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translate(var(--tx, 0px), var(--ty, -60px)) scale(1.4) rotate(180deg);
+  }
+  100% {
+    transform: translate(calc(var(--tx, 0px) * 1.6), calc(var(--ty, 60px) + 300px)) scale(0.6) rotate(600deg);
+    opacity: 0;
+  }
+}
+
+.animate-flower-surprise {
+  animation: flowerSurpriseBurst 3.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+
+
+
+/* The closed-gate artwork is split into two hinged panels. */
+.royal-gate-stage { position: relative; width: 100%; height: 100%; overflow: hidden; perspective: 1500px; perspective-origin: 50% 45%; }
+.royal-gate-stage .gate-door { position: absolute; z-index: 10; top: 0; bottom: 0; width: 50.3%; background: url('/assets/saurabh-aayushi/gate-closed.jpg') no-repeat; background-size: 200% 100%; backface-visibility: hidden; will-change: transform, opacity; transition: transform 1.65s cubic-bezier(.18,.77,.23,1), opacity .25s linear 1.25s; box-shadow: inset 0 0 20px rgba(39,15,4,.28); }
+.royal-gate-stage .gate-door-left { left: 0; background-position: left center; transform-origin: left center; }
+.royal-gate-stage .gate-door-right { right: 0; background-position: right center; transform-origin: right center; }
+.royal-gate-stage.is-opening .gate-door-left { transform: rotateY(-112deg); opacity: 0; }
+.royal-gate-stage.is-opening .gate-door-right { transform: rotateY(112deg); opacity: 0; }
+.gate-opening-glow { position: absolute; inset: 0; z-index: 5; pointer-events: none; opacity: 0; background: radial-gradient(ellipse at center, rgba(255,253,235,.9), rgba(255,239,185,.18) 42%, transparent 70%); }
+.royal-gate-stage.is-opening .gate-opening-glow { animation: gateGlow 1.35s ease-out forwards; }
+@keyframes gateGlow { 0% { opacity: 0; transform: scale(.55); } 45% { opacity: .9; transform: scale(1.15); } 100% { opacity: 0; transform: scale(1.55); } }
+.venue-title-art { display: inline-flex; align-items: baseline; justify-content: center; gap: .16em; color: #9d211d; line-height: .85; filter: drop-shadow(0 2px 1px rgba(255,255,255,.9)); }
+.venue-title-art span { font-family: 'Pinyon Script', cursive; font-size: clamp(4.25rem,16vw,6.5rem); }
+.venue-title-art strong { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: clamp(3.25rem,13vw,5.25rem); letter-spacing: -.05em; }
+/* Keep the invitation copy in the open sky, leaving the painted garden visible. */
+#announcement-section { justify-content: flex-start; padding-top: clamp(7rem, 17vh, 12rem); }
+.announcement-sky-content { min-height: 0; }
+#announcement-section .w-full.flex.flex-col.items-center.justify-center.py-6 { padding-top: 0; padding-bottom: 1rem; }
+
+/* Footer copy remains legible over the artwork without hiding the palace scene. */
+.footer-readable-panel { background: linear-gradient(180deg, rgba(255,253,246,.82), rgba(255,250,240,.58)); border: 1px solid rgba(151,98,45,.27); border-radius: 1.5rem; box-shadow: 0 14px 38px rgba(88,48,20,.15); backdrop-filter: blur(2px); }
+.footer-readable-panel .font-script-royal, .footer-readable-panel .font-serif-royal { text-shadow: 0 1px 0 rgba(255,255,255,.88); }
+
+/* The background is never moved. Only the gate painted inside it is duplicated into these two hinged panels. */
+.royal-gate-stage .gate-door { z-index: 30; top: 48%; bottom: auto; height: 42%; width: 31%; background-size: 323% 238%; box-shadow: none; transition: transform 1.65s cubic-bezier(.18,.77,.23,1), opacity .2s linear 1.3s; }
+.royal-gate-stage .gate-door-left { left: 19%; background-position: -27% -93%; transform-origin: left center; }
+.royal-gate-stage .gate-door-right { right: 19%; background-position: -73% -93%; transform-origin: right center; }
+.royal-gate-stage.is-opening .gate-door-left { transform: rotateY(-108deg); opacity: 0; }
+.royal-gate-stage.is-opening .gate-door-right { transform: rotateY(108deg); opacity: 0; }
+.gate-plaque { position: absolute; top: 63%; left: 0; right: 0; transform: translateY(-50%); pointer-events: none; }
+.gate-plaque button { pointer-events: auto; }
+@media (min-width: 640px) { .royal-gate-stage .gate-door { top: 46%; height: 45%; } .gate-plaque { top: 63%; } }
+/* Landing composition: logo and Wardrobe Planner sit in the painted sky, above the real gate. */
+.planner-title { position: absolute; top: 43%; left: 50%; width: min(100%, 430px); transform: translate(-50%, -50%); }
+
+/* Match the lower-centre gate printed in gate-closed.jpg; the rest of the artwork is untouched. */
+.royal-gate-stage .gate-door { top: 53%; height: 38%; width: 24%; background-size: 416.67% 263.16%; }
+.royal-gate-stage .gate-door-left { left: 26%; background-position: -34.2% -85.5%; }
+.royal-gate-stage .gate-door-right { right: 26%; background-position: -65.8% -85.5%; }
+.gate-plaque { top: 73%; }
+@media (min-width: 640px) { .planner-title { top: 42%; } .royal-gate-stage .gate-door { top: 52%; height: 39%; } .gate-plaque { top: 72%; } }
+/* The opening reveals a different garden through the doorway; it prevents the closed gate from remaining visible behind the rotating panels. */
+.gate-opening-reveal { position: absolute; z-index: 25; top: 53%; left: 26%; width: 48%; height: 38%; opacity: 0; overflow: hidden; pointer-events: none; background: url('/assets/saurabh-aayushi/garden-opened-bg.jpg') center bottom / cover no-repeat; box-shadow: inset 0 0 24px rgba(255,248,219,.8); transition: opacity .32s ease-out .18s; }
+.royal-gate-stage.is-opening .gate-opening-reveal { opacity: 1; }
+@media (min-width: 640px) { .gate-opening-reveal { top: 52%; height: 39%; } }
+/* Keep the click target above every animated door layer. */
+.gate-plaque { z-index: 60 !important; pointer-events: auto; top: 78%; }
+.gate-plaque button { position: relative; z-index: 61; pointer-events: auto; touch-action: manipulation; }
+@media (min-width: 640px) { .gate-plaque { top: 77%; } }
+/* Tap on the white plaque triggers a cinematic zoom into the painted gate. */
+.royal-gate-stage::before { content: ''; position: absolute; inset: 0; z-index: 1; opacity: 0; pointer-events: none; background: url('/assets/saurabh-aayushi/gate-closed.jpg') center / cover no-repeat; transform-origin: 50% 72%; }
+.royal-gate-stage.is-opening::before { animation: gateZoomReveal 1.82s cubic-bezier(.2,.72,.25,1) forwards; }
+.royal-gate-stage.is-opening > .relative.z-20 { animation: landingCopyOut .55s ease-out forwards; }
+@keyframes gateZoomReveal { 0% { opacity: 0; transform: scale(1); filter: brightness(1); } 12% { opacity: 1; transform: scale(1.02); filter: brightness(1.08); } 65% { opacity: 1; transform: scale(1.33); filter: brightness(1.42) saturate(1.1); } 100% { opacity: 1; transform: scale(1.48); filter: brightness(1.85); } }
+@keyframes landingCopyOut { to { opacity: 0; transform: scale(.94); } }
+/* Gate slices are visual layers only; they must never block the Open me button beneath their stacking context. */
+.royal-gate-stage .gate-door,
+.royal-gate-stage .gate-opening-reveal,
+.royal-gate-stage .gate-opening-glow { pointer-events: none; }

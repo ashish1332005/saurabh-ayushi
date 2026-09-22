@@ -117,7 +117,7 @@ export default function WardrobeGuide() {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center py-6 px-3 sm:px-4 max-w-2xl mx-auto my-auto">
+    <div className="w-full flex flex-col items-center justify-center wardrobe-sky-layout py-3 px-3 sm:px-4 max-w-2xl mx-auto my-auto">
 
       {/* Title Graphic (Wardrobe Planner - Let's help you pack for the wedding) */}
       <motion.div
@@ -125,7 +125,7 @@ export default function WardrobeGuide() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
-        className="max-w-[320px] sm:max-w-[420px] mb-3 text-center"
+        className="wardrobe-sky-title max-w-[260px] sm:max-w-[340px] mb-2 text-center"
       >
         <img
           src="/assets/saurabh-aayushi/wardrobe-planner-title.png"
@@ -144,7 +144,7 @@ export default function WardrobeGuide() {
           delay: 0.2,
           ease: 'easeOut'
         }}
-        className="relative w-full max-w-[300px] sm:max-w-[350px] aspect-[9/16] flex items-center justify-center my-3 overflow-visible"
+        className="relative w-full max-w-[235px] sm:max-w-[300px] aspect-[9/16] flex items-center justify-center my-1 overflow-visible"
       >
 
         {wardrobeCards.map((card, idx) => {

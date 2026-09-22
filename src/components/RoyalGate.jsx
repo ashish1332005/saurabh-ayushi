@@ -114,7 +114,7 @@ export default function RoyalGate({ onGateOpened }) {
         {!isOpening ? (
           <button
             onClick={handleOpenGate}
-            className="group relative px-7 py-2.5 sm:px-8 sm:py-3 bg-gradient-to-b from-[#fffefc] via-[#fff8ec] to-[#fdedce] border-2 border-[#b58b4c] shadow-[0_12px_32px_rgba(0,0,0,0.35)] rounded-full transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer flex items-center justify-center gap-2.5"
+            className="group relative px-5 py-1.5 sm:px-6 sm:py-2 bg-gradient-to-b from-[#fffefc] via-[#fff8ec] to-[#fdedce] border-2 border-[#b58b4c] shadow-[0_12px_32px_rgba(0,0,0,0.35)] rounded-full transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer flex items-center justify-center gap-2.5"
           >
             {/* Shimmer pulse effect */}
             <span className="absolute inset-0 rounded-full bg-amber-400/20 animate-ping pointer-events-none opacity-40" />

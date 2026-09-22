@@ -294,3 +294,13 @@ body {
 .royal-gate-stage .gate-door,
 .royal-gate-stage .gate-opening-reveal,
 .royal-gate-stage .gate-opening-glow { pointer-events: none; }
+/* Visual balancing for the supplied portrait artwork. */
+.gate-plaque { top: 73% !important; }
+.gate-plaque button { min-width: 0; font-size: 1rem; box-shadow: 0 5px 14px rgba(70,42,15,.26); }
+#wardrobe-section { justify-content: flex-start; padding-top: clamp(4.5rem, 10vh, 7.5rem); }
+.wardrobe-sky-layout { justify-content: flex-start; }
+.wardrobe-sky-title { margin-bottom: .25rem; }
+#wardrobe-section .wardrobe-sky-layout > .relative { margin-top: .25rem; }
+.footer-readable-panel { background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; backdrop-filter: none !important; }
+#footer-section { background-position: center center; }
+#footer-section .font-script-royal, #footer-section .font-serif-royal { text-shadow: 0 2px 5px rgba(255,255,255,.94), 0 0 13px rgba(255,255,255,.86); }

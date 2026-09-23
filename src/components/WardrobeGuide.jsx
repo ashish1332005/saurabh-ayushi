@@ -38,7 +38,15 @@ export default function WardrobeGuide() {
       date: '25TH NOVEMBER 2026',
       dressCode: 'Embrace evening glamour with elegant Indian attire, subtle shimmer & statement silhouettes.',
       image: '/assets/saurabh-aayushi/wardrobe-5.jpg'
-    }
+    },
+    
+  {
+    id: 6,
+    title: 'Vivha Sanskar',
+    date: '25TH NOVEMBER 2026',
+    dressCode: 'Silk Serene - embrace the sacred Pheras in timeless silks, graceful Indian silhouettes & soft festive hues.',
+    image: '/assets/saurabh-aayushi/6.jpg'
+  }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

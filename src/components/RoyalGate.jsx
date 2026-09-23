@@ -80,9 +80,9 @@ export default function RoyalGate({ onGateOpened }) {
 <button
   type="button"
   onClick={handleOpenGate}
-  className="gate-plaque-button relative z-[100] transition-transform duration-300 hover:scale-105 active:scale-95 cursor-pointer flex items-center justify-center"
+  className="gate-plaque-button relative z-[100] flex items-center justify-center cursor-pointer"
 >
-  <span className="font-serif-royal text-xl sm:text-2xl font-bold text-[#5c131a] tracking-wider leading-none">
+  <span className="relative z-[101] font-serif-royal text-xl sm:text-2xl font-bold text-[#5c131a] tracking-wider leading-none">
     Open me
   </span>
 </button>

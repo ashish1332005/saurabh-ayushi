@@ -77,18 +77,22 @@ export default function RoyalGate({ onGateOpened }) {
       {/* 3. CENTER DOOR PLAQUE: "Open me" (Positioned directly over the painted plaque) */}
       <div className="gate-plaque relative z-40 w-full flex flex-col items-center justify-center" onPointerUp={handleOpenGate}>
         {!isOpening ? (
-          <button
-            onClick={handleOpenGate}
-            className="gate-plaque-button relative transition-transform duration-300 hover:scale-105 active:scale-95 cursor-pointer flex items-center justify-center"
-          >
-            {/* Shimmer pulse effect */}
-            
-            
-            <span className="font-serif-royal text-xl sm:text-2xl font-bold text-[#5c131a] tracking-wider leading-none">
-              Open me
-            </span>
-            
-          </button>
+<button
+  type="button"
+  onClick={handleOpenGate}
+  className="relative z-[100] flex items-center justify-center
+             px-8 py-4
+             bg-white/80
+             border-2 border-[#5c131a]
+             rounded-lg
+             cursor-pointer
+             transition-transform duration-300
+             hover:scale-105 active:scale-95"
+>
+  <span className="font-serif-royal text-2xl sm:text-3xl font-bold text-[#5c131a] tracking-wider leading-none">
+    Open me
+  </span>
+</button>
         ) : (
           /* Bursting petals on click */
           surprisePetals.map((p) => (

@@ -69,6 +69,27 @@
 #footer-section::after { display: none !important; content: none !important; }
 #footer-section { filter: none !important; opacity: 1 !important; background-color: transparent !important; }
 #footer-section > * { display: none !important; }
+.gate-plaque {
+  position: relative;
+  z-index: 100;
+}
+
+.gate-plaque-button {
+  position: relative;
+  z-index: 101;
+  color: #5c131a !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.gate-plaque-button span {
+  position: relative;
+  z-index: 102;
+  display: block;
+  color: #5c131a !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 /* Scroll-guided real butterfly replacing the illustrated bird. */
 .flying-butterfly { width: 2.7rem; height: 2.7rem; opacity: .96; filter: drop-shadow(0 3px 6px rgba(86,42,16,.28)); animation: butterflyFloat 1.8s ease-in-out infinite alternate; }
 .flying-butterfly img { animation: butterflyWing 210ms ease-in-out infinite alternate; transform-origin: center; }

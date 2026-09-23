@@ -83,11 +83,11 @@ export default function RoyalGate({ onGateOpened }) {
           >
             {/* Shimmer pulse effect */}
             <span className="absolute inset-0 rounded-full bg-amber-400/20 animate-ping pointer-events-none opacity-40" />
-            <span className="text-[#b58b4c] text-sm animate-pulse">🌸</span>
+            
             <span className="font-serif-royal text-xl sm:text-2xl font-bold text-[#5c131a] tracking-wider leading-none">
               Open me
             </span>
-            <span className="text-[#b58b4c] text-sm animate-pulse">🌸</span>
+            
           </button>
         ) : (
           /* Bursting petals on click */

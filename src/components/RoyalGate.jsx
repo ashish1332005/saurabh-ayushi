@@ -82,7 +82,7 @@ export default function RoyalGate({ onGateOpened }) {
             className="gate-plaque-button relative transition-transform duration-300 hover:scale-105 active:scale-95 cursor-pointer flex items-center justify-center"
           >
             {/* Shimmer pulse effect */}
-            <span className="absolute inset-0 rounded-full bg-amber-400/20 animate-ping pointer-events-none opacity-40" />
+            
             
             <span className="font-serif-royal text-xl sm:text-2xl font-bold text-[#5c131a] tracking-wider leading-none">
               Open me

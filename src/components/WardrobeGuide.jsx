@@ -9,35 +9,35 @@ export default function WardrobeGuide() {
       title: 'Funtakshari',
       date: '23RD NOVEMBER 2026',
       dressCode: 'Celebrate Funtakshari in vibrant festive style with colourful lehengas, Indo-western looks, and stylish kurta-jacket sets.',
-      image: '/assets/saurabh-aayushi/wardrobe-1.jpg'
+      image: '/assets/saurabh-aayushi/1-1.jpg'
     },
     {
       id: 2,
       title: 'Nanihaal Ki Mithaas',
       date: '24TH NOVEMBER 2026',
       dressCode: 'Celebrate Indian tradition in vibrant Bandhej, Gotta Patti, and elegant ethnic wear.',
-      image: '/assets/saurabh-aayushi/wardrobe-2.jpg'
+      image: '/assets/saurabh-aayushi/2.jpg'
     },
     {
       id: 3,
       title: 'Scarlet Soirée Sangeet',
       date: '24TH NOVEMBER 2026',
       dressCode: 'A black-tie affair blending classic formalwear with elegant Indo-western style.',
-      image: '/assets/saurabh-aayushi/wardrobe-3.jpg'
+      image: '/assets/saurabh-aayushi/3.jpg'
     },
     {
       id: 4,
       title: 'A Tale of Rose & Revelry Carnival',
       date: '24TH NOVEMBER 2026',
       dressCode: 'Bridgerton meets Carnival — romantic pastels, florals, flowy silhouettes & charming details.',
-      image: '/assets/saurabh-aayushi/wardrobe-4.jpg'
+      image: '/assets/saurabh-aayushi/4.jpg'
     },
     {
       id: 5,
       title: 'Prem Abhigyan Varmala',
       date: '25TH NOVEMBER 2026',
       dressCode: 'Embrace evening glamour with elegant Indian attire, subtle shimmer & statement silhouettes.',
-      image: '/assets/saurabh-aayushi/wardrobe-5.jpg'
+      image: '/assets/saurabh-aayushi/5(1).jpg'
     },
     
   {

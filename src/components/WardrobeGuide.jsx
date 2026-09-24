@@ -37,7 +37,7 @@ export default function WardrobeGuide() {
       title: 'Prem Abhigyan Varmala',
       date: '25TH NOVEMBER 2026',
       dressCode: 'Embrace evening glamour with elegant Indian attire, subtle shimmer & statement silhouettes.',
-      image: '/assets/saurabh-aayushi/5(1).jpg'
+      image: '/assets/saurabh-aayushi/5 (1).jpg'
     },
     
   {
